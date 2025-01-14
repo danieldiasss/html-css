@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedado localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="imagens/Captura de tela 2024-12-10 113619.png" controls autoplay loop>
+
+        <source src="midia/Meuvideo . mp4.mp4" type="video/mp4">
+        <source src="midia/Meuvideo. webm.webm" type="video/webm">
+        <p>Seu navergador não tem compatibilidade com reprodução de vídeos.</p>
+        <!--Desse jeito o consumo de banda é muito grande pois está hospedando localmente. Recomenda hospedar externamente-->
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JaTf3dhx464?si=47257mOug7L25Qcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/127486677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    
+    width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+    title="Animation Bootcamp - Project03 (Animation Curves)"></iframe>
+    
+</body>
+</html>

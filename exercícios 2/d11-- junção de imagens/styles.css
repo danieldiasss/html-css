@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* Remove margens e bordas do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden; /* Evita barras de rolagem */
+}
+
+.image-container {
+    position: relative; /* Define um contexto de posicionamento */
+    width: 100vw; /* Largura total da janela */
+    height: 100vh; /* Altura total da janela */
+}
+
+/* Imagem de fundo */
+.imagem1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    z-index: 1;
+}
+
+/* Imagem sobreposta */
+.imagem2{
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    z-index: 2;
+    width: 50%; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}

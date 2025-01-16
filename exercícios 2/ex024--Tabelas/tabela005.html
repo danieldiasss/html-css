@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px
+        }
+        
+        .destaque{
+            background-color: chartreuse;
+        }
+
+        col.cnome{
+            background-color: chartreuse;
+        }
+
+        col.csexo{
+            background-color: yellow;
+        }
+</style>
+</head>
+<body>
+    <h1>Exercícios de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+<!--Também posso colocar um grupo de colunas junto apenas colocando a classe spam-->
+        <tr>
+            <td>Ana Maria</th>
+            <td>F</th>
+            <td>23</th>
+            <td>Jornalista</th> 
+        </tr>
+
+        <tr>
+            <td>Cláudio</th>
+            <td>M</th>
+            <td>28</th>
+            <td>Farmacêutico</th> 
+        </tr>
+
+        <tr>
+            <td>Mirelly</th>
+            <td>F</th>
+            <td>17</th>
+            <td>Lojista</th> 
+        </tr>
+
+        <tr>
+            <td>Guimel</th>
+            <td>M</th>
+            <td>19</th>
+            <td>Vendedor</th> 
+        </tr>
+
+        <tr>
+            <td>Maria</th>
+            <td>F</th>
+            <td>39</th>
+            <td>Médica</th> 
+        </tr>
+
+        <tr>
+            <td>Ótavio</th>
+            <td>M</th>
+            <td>22</th>
+            <td>Nutricionista</th> 
+        </tr>
+
+
+
+
+
+
+
+    </table>
+</body>
+</html>
